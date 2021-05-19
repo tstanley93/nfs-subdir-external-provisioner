@@ -29,11 +29,11 @@ spec:
             - name: PROVISIONER_NAME
               value: k8s-sigs.io/nfs-subdir-external-provisioner
             - name: NFS_SERVER
-              value: 10.3.243.101
+              value: 10.12.0.13
             - name: NFS_PATH
-              value: /ifs/kubernetes
+              value: /i-nfs-1/virt/kvm
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 10.3.243.101
-            path: /ifs/kubernetes
+            server: 10.12.0.13
+            path: /i-nfs-1/virt/kvm
